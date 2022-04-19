@@ -7,4 +7,7 @@
     <string name="password">ŞİFRE</string>
     <string name="kayit_ol">Kayıt Ol</string>
     <string name="kvkk">KVKK Aydınlatma Metnini Okudum, Kabul Ediyorum.</string>
+    <string name="profileFullName">Ad Soyad</string>
+    <string name="profileUserMail">KullanÄ±cÄ± Mail</string>
+
 </resources>
