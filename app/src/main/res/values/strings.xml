@@ -8,6 +8,15 @@
     <string name="kayit_ol">Kayıt Ol</string>
     <string name="kvkk">KVKK Aydınlatma Metnini Okudum, Kabul Ediyorum.</string>
     <string name="profileFullName">Ad Soyad</string>
-    <string name="profileUserMail">KullanÄ±cÄ± Mail</string>
+    <string name="profileUserMail">Kullananıcı Mail</string>
+    <string name="product1_name">İskender</string>
+    <string name="product2_name">Kebap</string>
+    <string name="product1_features">İskender</string>
+    <string name="product2_features">İskender</string>
+    <string name="urun_fiyati_1">Küçük Pors.</string>
+    <string name="urun_fiyati_2">Orta Pors.</string>
+    <string name="urun_fiyati_3">Büyük Pors.</string>
+    <string name="hesapla_button">HESAPLA</string>
+
 
 </resources>

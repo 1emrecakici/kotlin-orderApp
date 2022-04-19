@@ -12,14 +12,14 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="260dp"
+            android:layout_height="150dp"
             android:background="@color/white"
             android:padding="20dp">
 
             <ImageView
                 android:id="@+id/profile_image"
-                android:layout_width="128dp"
-                android:layout_height="128dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="18dp"
                 android:src="@drawable/profile"
@@ -54,18 +54,156 @@
                 android:textSize="14sp" />
         </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            >
+
+                <ImageView
+                    android:id="@+id/product1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/iskender"
+                    />
+
+
+            <TextView
+                android:id="@+id/product1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/product1"
+                android:text="@string/product1_name"
+                android:textAllCaps="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:paddingBottom="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/product1_feature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product1_name"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/product1"
+                android:text="@string/product1_features"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/product1_feature"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/product1"
+                >
+                <RadioButton
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:text="@string/urun_fiyati_1"/>
+                <RadioButton
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:text="@string/urun_fiyati_2"/>
+                <RadioButton
+                    android:layout_width="70dp"
+                    android:textSize="12dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/urun_fiyati_3"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:id="@+id/product2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/kebap"
+                />
+
+
+            <TextView
+                android:id="@+id/product2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/product2"
+                android:text="@string/product2_name"
+                android:textAllCaps="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:paddingBottom="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/product2_feature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product2_name"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/product2"
+                android:text="@string/product2_features"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/product2_feature"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/product2"
+                >
+                <RadioButton
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:text="@string/urun_fiyati_1"/>
+                <RadioButton
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:text="@string/urun_fiyati_2"/>
+                <RadioButton
+                    android:layout_width="70dp"
+                    android:textSize="12dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/urun_fiyati_3"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="10dp">
-
-
-
-
-        </LinearLayout>
+            android:text="@string/hesapla_button"/>
     </LinearLayout>
 
 </ScrollView>
