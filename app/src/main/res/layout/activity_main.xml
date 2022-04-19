@@ -75,21 +75,33 @@
                android:textColorHint="@color/black"
                android:background="@drawable/edit_text_background"
                />
-           <EditText
-               android:id="@+id/edt_password"
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/til_password"
+               style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:layout_marginTop="20dp"
-               android:hint="@string/password"
-               android:inputType="numberPassword"
-               android:gravity="left"
-               android:maxLines="1"
-               android:minHeight="50dp"
-               android:padding="10dp"
-               android:textColor="@color/black"
-               android:textColorHint="@color/black"
-               android:background="@drawable/edit_text_background"
-               />
+               android:layout_marginTop="8dp"
+               app:errorEnabled="true"
+               app:passwordToggleEnabled="true">
+
+               <EditText
+                   android:id="@+id/edt_password"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:hint="@string/password"
+                   android:inputType="numberPassword"
+                   android:gravity="left"
+                   android:maxLines="1"
+                   android:minHeight="50dp"
+                   android:padding="10dp"
+                   android:textColor="@color/black"
+                   android:textColorHint="@color/black"
+                   android:background="@drawable/edit_text_background"
+                   />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
            <CheckBox
                android:id="@+id/checkBox_kvkk"
                android:layout_width="wrap_content"
