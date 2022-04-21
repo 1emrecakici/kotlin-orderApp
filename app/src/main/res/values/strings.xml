@@ -11,8 +11,8 @@
     <string name="profileUserMail">Kullananıcı Mail</string>
     <string name="product1_name">İskender</string>
     <string name="product2_name">Kebap</string>
-    <string name="product1_features">İskender</string>
-    <string name="product2_features">İskender</string>
+    <string name="product1_features">Kuzu eti, domates sosu, pide ekmeği, tereyağı ve yoğurt</string>
+    <string name="product2_features">Dana eti, lavaş, ayran kapya biber ve sarımsak</string>
     <string name="urun_fiyati_1">Küçük Pors.</string>
     <string name="urun_fiyati_2">Orta Pors.</string>
     <string name="urun_fiyati_3">Büyük Pors.</string>

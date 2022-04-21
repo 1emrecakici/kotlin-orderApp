@@ -22,7 +22,6 @@
                 android:layout_height="100dp"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="18dp"
-                android:src="@drawable/profile"
                 />
 
 
@@ -107,24 +106,33 @@
                 android:layout_marginStart="20dp"
                 android:layout_toEndOf="@+id/product1"
                 >
-                <RadioButton
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textSize="12dp"
-                    android:text="@string/urun_fiyati_1"/>
-                <RadioButton
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="12dp"
-                    android:textColor="@color/black"
-                    android:text="@string/urun_fiyati_2"/>
-                <RadioButton
-                    android:layout_width="70dp"
-                    android:textSize="12dp"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="@string/urun_fiyati_3"/>
+                <RadioGroup
+                    android:id="@+id/rgrup_iskender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/iskender10"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:text="@string/urun_fiyati_1"/>
+                    <RadioButton
+                        android:id="@+id/iskender20"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:text="@string/urun_fiyati_2"/>
+                    <RadioButton
+                        android:id="@+id/iskender30"
+                        android:layout_width="70dp"
+                        android:textSize="12dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="@string/urun_fiyati_3"/>
+                </RadioGroup>
             </LinearLayout>
         </RelativeLayout>
         <RelativeLayout
@@ -180,27 +188,47 @@
                 android:layout_marginStart="20dp"
                 android:layout_toEndOf="@+id/product2"
                 >
-                <RadioButton
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textSize="12dp"
-                    android:text="@string/urun_fiyati_1"/>
-                <RadioButton
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="12dp"
-                    android:textColor="@color/black"
-                    android:text="@string/urun_fiyati_2"/>
-                <RadioButton
-                    android:layout_width="70dp"
-                    android:textSize="12dp"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="@string/urun_fiyati_3"/>
+                <RadioGroup
+                    android:id="@+id/rgrup_kebap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/kebap10"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:text="@string/urun_fiyati_1"/>
+                    <RadioButton
+                        android:id="@+id/kebap20"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:text="@string/urun_fiyati_2"/>
+                    <RadioButton
+                        android:id="@+id/kebap30"
+                        android:layout_width="70dp"
+                        android:textSize="12dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="@string/urun_fiyati_3"/>
+                </RadioGroup>
             </LinearLayout>
         </RelativeLayout>
+        <TextView
+            android:id="@+id/sum_txtview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="toplam"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            />
         <Button
+            android:id="@+id/sum_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/hesapla_button"/>
