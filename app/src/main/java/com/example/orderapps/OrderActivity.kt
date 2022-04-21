@@ -44,7 +44,6 @@ class OrderActivity : AppCompatActivity() {
                 if (checkedId == R.id.iskender30){
                     sum1 = sum + 30
                 }
-
             }
         }
         rgrup_kebap.setOnCheckedChangeListener{kebap, checkedId ->
@@ -58,26 +57,23 @@ class OrderActivity : AppCompatActivity() {
                 if(checkedId == R.id.kebap30){
                     sum2 = sum + 30
                 }
-
             }
         }
 
         sum_button.setOnClickListener{
-            Log.d("TAG", "$sum1")
-            sum = sum1 + sum2
-            Log.d("TAG", "$sum")
-            if (sum1 == 0 || sum2 == 0){
-                Toast.makeText(this, "Her iki menüden de birer seçim yapınız...", Toast.LENGTH_SHORT).show()
-                rgrup_iskender.clearCheck()
-                rgrup_kebap.clearCheck()
-                sum = 0
-                sum1 = 0
-                sum2 = 0
-                sum_txtview.setVisibility(View.INVISIBLE)
-            }
-            else {
+            if (sum1 == 0 || sum2 ==0){
+                if (sum1 == 0){
+                    Toast.makeText(this, "İskender menüsünden seçim yapınız...", Toast.LENGTH_SHORT).show()
+                    sum_txtview.setVisibility(View.INVISIBLE)
+                }
+                if(sum2 == 0){
+                    Toast.makeText(this, "Kebap menüsünden seçim yapınız...", Toast.LENGTH_SHORT).show()
+                    sum_txtview.setVisibility(View.INVISIBLE)
+                }
+            } else {
+                sum = sum1 + sum2
                 sum_txtview.setVisibility(View.VISIBLE)
-                sum_txtview.text = sum.toString()
+                sum_txtview.text = sum.toString()+" "+"TL"
                 rgrup_iskender.clearCheck()
                 rgrup_kebap.clearCheck()
                 sum = 0
