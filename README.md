@@ -1,6 +1,6 @@
 # kotlin-orderApp
-#Öncelikle bu proje kotlin diliyle yazılmış bir projedir. 
-#İçeriğinde Kullanılan Elementler
+Öncelikle bu proje kotlin diliyle yazılmış bir projedir. 
+İçeriğinde Kullanılan Elementler
 # ->Edittext, 
 # ->Button, 
 # ->Imageview,
@@ -8,11 +8,11 @@
 # ->Radiogroup ve 
 # ->RadioButton
 
-# Kullanılan dependencies ler
-#-> implementation 'androidx.appcompat:appcompat:1.4.1'
-#-> implementation 'com.google.android.material:material:1.5.0'
-#-> implementation 'com.github.bumptech.glide:glide:4.13.0'
-#-> implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+Kullanılan dependencies
+-> implementation 'androidx.appcompat:appcompat:1.4.1'
+-> implementation 'com.google.android.material:material:1.5.0'
+-> implementation 'com.github.bumptech.glide:glide:4.13.0'
+-> implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 
 # Kullanılan Plugings ler
 #-> id 'kotlin-android'
