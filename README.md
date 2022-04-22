@@ -1,6 +1,6 @@
 # kotlin-orderApp
 Öncelikle bu proje kotlin diliyle yazılmış bir projedir. 
-İçeriğinde Kullanılan Elementler
+#İçeriğinde Kullanılan Elementler
 # ->Edittext, 
 # ->Button, 
 # ->Imageview,
