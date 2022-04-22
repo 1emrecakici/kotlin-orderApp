@@ -3,7 +3,7 @@
     <string name="app_name">OrderApp</string>
     <string name="name">AD</string>
     <string name="surname">SOYAD</string>
-    <string name="email">E-mail</string>
+    <string name="email">E-MAİL</string>
     <string name="password">ŞİFRE</string>
     <string name="kayit_ol">Kayıt Ol</string>
     <string name="kvkk">KVKK Aydınlatma Metnini Okudum, Kabul Ediyorum.</string>
@@ -17,6 +17,7 @@
     <string name="urun_fiyati_2">Orta Pors.</string>
     <string name="urun_fiyati_3">Büyük Pors.</string>
     <string name="hesapla_button">HESAPLA</string>
+    <string name="hosgeldiniz">hoşgeldiniz</string>
 
 
 </resources>

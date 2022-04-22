@@ -13,7 +13,6 @@
            android:orientation="vertical"
            android:paddingLeft="20dp"
            android:paddingRight="20dp"
-           android:paddingTop="20dp"
            >
 
            <TextView
@@ -26,80 +25,78 @@
                android:maxLines="1"
                android:padding="10dp"
                android:text="@string/kayit_ol"
+               android:background="@drawable/text_view_background"
                android:textColor="@color/black"
                android:textSize="28dp"
-               android:textStyle="bold" />
-
+               android:textStyle="bold"
+               android:textAllCaps="true"/>
            <EditText
                android:id="@+id/edt_name"
                android:layout_width="match_parent"
-               android:layout_height="wrap_content"
+               android:layout_height="60dp"
+               android:ems="10"
+               android:drawableStart="@drawable/custom_user_icon"
+               android:drawablePadding="12dp"
+               android:paddingStart="12dp"
                android:layout_marginTop="20dp"
+               android:paddingEnd="12dp"
                android:hint="@string/name"
+               android:background="@drawable/custom_input"
                android:inputType="textPersonName"
-               android:gravity="left"
-               android:maxLines="1"
-               android:minHeight="50dp"
-               android:padding="10dp"
-               android:textColor="@color/black"
-               android:textColorHint="@color/black"
-               android:background="@drawable/edit_text_background"
+               android:textSize="14sp"
                />
            <EditText
                android:id="@+id/edt_surname"
                android:layout_width="match_parent"
-               android:layout_height="wrap_content"
+               android:layout_height="60dp"
+               android:ems="10"
+               android:drawableStart="@drawable/custom_user_icon"
+               android:drawablePadding="12dp"
+               android:paddingStart="12dp"
                android:layout_marginTop="20dp"
+               android:paddingEnd="12dp"
                android:hint="@string/surname"
+               android:background="@drawable/custom_input"
                android:inputType="textPersonName"
-               android:gravity="left"
-               android:maxLines="1"
-               android:minHeight="50dp"
-               android:padding="10dp"
-               android:textColor="@color/black"
-               android:textColorHint="@color/black"
-               android:background="@drawable/edit_text_background"
+               android:textSize="14sp"
                />
            <EditText
                android:id="@+id/edt_email"
                android:layout_width="match_parent"
-               android:layout_height="wrap_content"
+               android:layout_height="60dp"
+               android:ems="10"
+               android:drawableStart="@drawable/custom_email_icon"
+               android:drawablePadding="12dp"
+               android:paddingStart="12dp"
                android:layout_marginTop="20dp"
+               android:paddingEnd="12dp"
                android:hint="@string/email"
+               android:background="@drawable/custom_input"
                android:inputType="textEmailAddress"
-               android:gravity="left"
-               android:maxLines="1"
-               android:minHeight="50dp"
-               android:padding="10dp"
-               android:textColor="@color/black"
-               android:textColorHint="@color/black"
-               android:background="@drawable/edit_text_background"
+               android:textSize="14sp"
                />
            <com.google.android.material.textfield.TextInputLayout
-               android:id="@+id/til_password"
-               style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+               android:id="@+id/til_pasword"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:layout_marginTop="8dp"
-               app:errorEnabled="true"
-               app:passwordToggleEnabled="true">
+               app:passwordToggleEnabled="true"
+               app:passwordToggleTint="@color/button"
+               >
 
                <EditText
                    android:id="@+id/edt_password"
                    android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
+                   android:layout_height="60dp"
+                   android:ems="10"
+                   android:drawableStart="@drawable/custom_lock_icon"
+                   android:drawablePadding="12dp"
+                   android:paddingStart="12dp"
+                   android:paddingEnd="12dp"
                    android:layout_marginTop="20dp"
                    android:hint="@string/password"
+                   android:background="@drawable/custom_input"
                    android:inputType="numberPassword"
-                   android:gravity="left"
-                   android:maxLines="1"
-                   android:minHeight="50dp"
-                   android:padding="10dp"
-                   android:textColor="@color/black"
-                   android:textColorHint="@color/black"
-                   android:background="@drawable/edit_text_background"
-                   />
-
+                   android:textSize="14sp" />
            </com.google.android.material.textfield.TextInputLayout>
 
            <CheckBox
@@ -113,16 +110,15 @@
            <Button
                android:id="@+id/btn_kayitOl"
                android:layout_width="match_parent"
-               android:layout_height="wrap_content"
+               android:layout_height="50dp"
                android:layout_marginTop="20dp"
-               android:background="@drawable/button_background"
+               android:padding="17dp"
+               android:background="@drawable/custom_button"
                android:text="@string/kayit_ol"
-               style="@style/ShapeAppearance.MaterialComponents"
-               app:icon="@android:drawable/ic_dialog_email"/>
-
-
-
-
+               android:drawableStart="@drawable/ic_person_add"
+               android:textAllCaps="true"
+               android:textColor="@color/editTextColor"
+               />
        </LinearLayout>
 
 

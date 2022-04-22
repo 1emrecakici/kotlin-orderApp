@@ -4,17 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OrderActivity">
+    tools:context=".OrderActivity"
+    android:background="@color/editTextColor">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/editTextColor">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="@color/white"
-            android:padding="20dp">
+            android:padding="20dp"
+            android:backgroundTint="@color/editTextColor">
 
             <ImageView
                 android:id="@+id/profile_image"
@@ -24,6 +27,21 @@
                 android:layout_marginStart="18dp"
                 />
 
+            <TextView
+                android:id="@+id/hosgeldiniz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:textAllCaps="true"
+                android:background="@drawable/text_view_background"
+                android:layout_toEndOf="@+id/profile_image"
+                android:layout_above="@id/profileFullName"
+                android:text="@string/hosgeldiniz"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
 
             <TextView
                 android:id="@+id/profileFullName"
@@ -32,6 +50,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="20dp"
                 android:textAllCaps="true"
+                android:background="@drawable/text_view_background"
                 android:layout_toEndOf="@+id/profile_image"
                 android:text="@string/profileFullName"
                 android:textColor="@color/black"
@@ -45,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/profileFullName"
                 android:layout_centerVertical="true"
+                android:background="@drawable/text_view_background"
                 android:layout_marginStart="20dp"
                 android:layout_toEndOf="@+id/profile_image"
                 android:text="@string/profileUserMail"
@@ -55,8 +75,13 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/blue1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="@color/white"
+            android:backgroundTint="@color/editTextColor"
             >
 
                 <ImageView
@@ -137,8 +162,13 @@
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/blue1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="@color/white"
+            android:backgroundTint="@color/editTextColor"
             >
 
             <ImageView
@@ -217,6 +247,10 @@
                 </RadioGroup>
             </LinearLayout>
         </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/blue1"/>
         <TextView
             android:id="@+id/sum_txtview"
             android:layout_width="match_parent"
@@ -231,7 +265,8 @@
             android:id="@+id/sum_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/hesapla_button"/>
+            android:text="@string/hesapla_button"
+            android:background="@color/blue1"/>
     </LinearLayout>
 
 </ScrollView>

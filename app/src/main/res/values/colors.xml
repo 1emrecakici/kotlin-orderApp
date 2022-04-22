@@ -7,8 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="button">#A9A9A9</color>
-    <color name="colorPrimary">#add8e6</color>
+    <color name="colorPrimary">#D5080F</color>
     <color name="editTextColor">#add8e6</color>
     <color name="colorPrimaryDark">#1F1C26</color>
     <color name="colorAccent">#CE2A5E</color>
@@ -19,9 +18,11 @@
     <color name="forest_green">#2E7F18</color>
     <color name="sap_green">#45731E</color>
     <color name="antique_bronze">#675E24</color>
+    <color name="blue1">#00668B</color>
     <color name="chestnut">#8D472B</color>
     <color name="sweet_brown">#B13433</color>
     <color name="cardinal">#C82538</color>
     <color name="white_90">#e6e6e6</color>
     <color name="grey_87">#dedede</color>
+    <color name="button">#add8e6</color>
 </resources>
